@@ -1,202 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Варіант №3 !! Основний !! (підключення окремого файлу) -->
-		<link rel="stylesheet" href="css/style.css">
-		<title>Lesson 3</title>
-		<!-- Варіант №1 (тег style) -->
-		<!-- 
-		<style>
-			
-		</style>
-		 -->
-	</head>
-	<body>
-		<!-- Анатомія вкладенності -->
-		<!-- Батьківський елемент для тегів P та SPAN -->
-		<div>
-			<!-- Дочірній елемент першого рівня/безпосередній відносно тегу DIV -->
-			<p>
-				<!-- 
-					Дочірній елемент першого рівня/безпосередній для тегу P 
-					та елемент другого рівня (вкладеності) відносно тегу DIV
-				 -->
-				<span></span>
-			</p>
-		</div>
+<html lang="uk">
 
-		<!-- Шлях до файлів -->
-		<!-- <img src="img/home/01.png" alt=""> -->
-		<!-- Вкладеність -->
-		<!-- 
-		<h1>Заголовок</h1>
-		<div class="text">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
-			</p>
-			<p>
-				Lorem ipsum dolor sit am
-				et consectetur adipisicing elit. Quo nihil nulla mollitia consequuntur tenetur maiores quasi natus voluptate dolorem esse facilis fugiat eveniet, eaque illo at dolor, culpa perspiciatis ipsum?
-			</p>
-		</div>
-		<ul>
-			<li>Пункт</li>
-			<li>Пункт</li>
-			<li>Пункт</li>
-			<li>Пункт</li>
-			<li>Пункт</li>
-		</ul>
-		 -->
-		<!-- Виняток -->
-		<!-- У рядковий тег A ми МОЖЕМО вкладати конструкції, 
-			у тому числі з використанням блочних, будівельних тегів  -->
-		<!-- 
-		<a href="contacts.html">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>leson3</title>
+
+</head>
+	<body>
+		<header>
 			<div>
-				<img src="" alt="">
-			</div>
-			<div>
+				<h1>
+					Рок-н-рольник
+				</h1>
 				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur asperiores, laudantium nam vel, praesentium ut id minima autem architecto numquam similique suscipit consequatur quas harum libero? Error labore veritatis tempore.
+					Матеріал з Вікіпедії — вільної енциклопедії
 				</p>
 			</div>
-		</a>
-		 -->
-
-		<!-- Атрибути -->
-		<!-- class="ім'я ім'я". 
-			В значенні вказуємо довільне ім'я класу(сів).
-			Однакових класів може бути скільки завгодно
-		-->
-		<!-- 
-			Правила написання імені класу: 
-			0) ім'я довільне, але логічне - описує цей об'єкт
-			1) тільки латиниця (eng)
-			2) тільки маленьки (прописні) літери
-			3) пробіли у імені класу (коли в імені більше одного слова) замінюємо на "-" (дефіс)
-		-->
-		<!-- 
-		<div class="text">
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-		</div>
-		<div class="text">
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia enim amet eaque consequuntur suscipit debitis veniam, non cum repudiandae, obcaecati inventore possimus laboriosam voluptatum tempore autem assumenda nemo itaque.</p>
-		</div>
-		<div class="our-advantages">
-
-		</div>
-		 -->
-
-		<!-- Атрибут class може мати безліч значень розділених пробілом -->
-		<!-- 
-		<div class="text our-advantages">
-
-		</div>
-		 -->
-
-		<!-- Атрибут ID -->
-		<!-- 
-			ЗНАЧЕННЯ ID МАЄ БУТИ УНІКАЛЬНИМ НА СТОРІНЦІ !!!!!!!!!
-		 -->
-		<!-- 
-			Правила написання імені ID: 
-			0) ім'я довільне, але логічне - описує цей об'єкт
-			1) тільки латиниця (eng)
-			2) тільки маленьки (прописні) літери
-			3) пробіли у імені класу (коли в імені більше одного слова) замінюємо на "-" (дефіс)
-		-->
-		<!-- 
-		<div id="block"></div>
-		 -->
-		<!-- Може бути, але не варто -->
-		<!-- <div title="" class="block"></div> -->
-
-		<!-- Додаткові атрибути -->
-		<!-- title - довільний текст підказки, яка з'являється при наведенні на об'єкт -->
-		<!-- alt - довільний текст (опис) зображення -->
-		<!-- 
-		<a href="" title="Я підказка" target="_blank">
-			Я посилання
-		</a>
-		<img title="" src="" alt="Опис зображення">
- 		-->
-		<!-- Взаємодія HREF + ID -->
-		<!-- 
-		<div id="top" class="text">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed, veniam odit natus odio repudiandae officiis. Mollitia qui laudantium alias aliquid necessitatibus aliquam, quaerat sequi odio, facere inventore, ex rem!</p>
-		</div>
-		<a href="#top" class="link">Наверх ^</a>
-		 -->
-
-		<!-- Введення в CSS -->
-		<h1>Я заголовок</h1>
-		<h2>Підрозділи:</h2>
-		<ul>
-			<li>
-				<a href="">Підрозділ №1</a>
-			</li>
-			<li>
-				<a href="">Підрозділ №2</a>
-			</li>
-			<li>
-				<a href="">Підрозділ №3</a>
-			</li>
-		</ul>
-		<div class="text">
-			<!--Варіант №2 (рядковий метод) (Атрибут style) -->
-			<p> <!-- style="пишемо стилі" -->
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-		</div>
-		<div class="lesson">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cupiditate possimus culpa eius molestias! Fugit impedit incidunt doloribus sit at. Explicabo nam, consectetur velit quae culpa rerum error quis excepturi.
-			</p>
-		</div>
+		</header>
+		<main>
+			<div class="head">
+				<p>
+					«Рок-н-рольник» (англ. RocknRolla) — британська кримінальна комедія <a target="_blank" href="https://uk.wikipedia.org/wiki/%D2%90%D0%B0%D0%B9_%D0%A0%D1%96%D1%87%D1%96">Гая Річі</a>  2008 року.
+				</p>
+				<div>
+					<img title="Постер" src="img/RocknRolla_poster.jpg" alt="постер до фільму «Рок-н-рольник»">
+				</div>
+				<div>
+					<p>
+						<h3>
+							<mark>
+								Зміст
+							</mark>
+						</h3>
+					</p>
+					<ol>
+						<li><a href="#syuzhet">Сюжет</a></li>
+						<li><a href="#roles">У ролях</a></li>
+						<li><a href="#facts">Цікаві факти</a></li>
+						<li><a href="#notes">Примітки</a></li>
+						<li><a href="#link">Посилання</a></li>
+					</ol>
+				</div>
+			</div>
+			<div>
+				<div class="syuzhet">
+					<h2 id="syuzhet">
+						Сюжет
+					</h2>
+					<p>
+						Російський бандит провертає хитру земельну угоду, залишаючи буквально на поверхні мільйони доларів, які нібито хто завгодно може прийти і забрати. Природно, вся організована злочинність Лондона негайно починає ганятися за грошима, підставляючи й убиваючи один одного.
+					</p>
+				</div>
+				<div>
+					<h2 id="roles">У ролях</h2>
+					<ul>
+						<li>Марк Стронг — Арчі.</li>
+						<li>Джерард Батлер — Раз-Два.</li>
+						<li>Ідріс Ельба — Буркотун.</li>
+						<li>Том Вілкінсон — Ленні Коул.</li>
+							<ul>
+								<li>Карел Роден — російський бізнесмен-олігарх Юрій Омович.</li>
+								<li>Драґан Міканович — Віктор.</li>
+								<li>Тенді Ньютон — Стелла.</li>
+							</ul>
+						<li>Тобі Кеббелл — Джонні Квід.</li>
+						<li>Том Гарді — Красунчик Боб.</li>
+						<li>Кріс Бриджес — Міккі.</li>
+						<li>Джеремі Півен — Роман.</li>
+						<li>Джемма Артертон — Джун.</li>
+						<li>Джеймі Кемпбелл Бовер — Рокер.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="fact">
+				<h2 id="facts">
+					Цікаві факти
+				</h2>
+				<p>
+					Незвичайний монтаж у сексуальній сцені зроблено тому, що в день зйомок у Джерарда Батлера виявили серйозну інфекцію дихальних шляхів, — і Тенді Ньютон відмовилась цілуватися з ним. Гаю Річі довелося імпровізувати[2].
+				</p>
+				<p>
+					Призвісько «раз-два» (англ. one-two) в актора Батлера перекладено з англійської як «швидка втеча» або «готова відповідь»; це призвісько — це також боксовий термін для позначення прийому, який складається з двох ударів: короткий зліва — і зразу ж сильний справа, зазвичай в щелепу.
+				</p>
+				<p>
+					Прототипом Джонні Квіда став відомий англійський музикант Піт Доерті, вокаліст групи «Babyshambles».
+				</p>
+				<p>
+					Прототипом російського бізнесмена у фільмі є Роман Абрамович, оскільки у фільмі бізнесмен також зацікавлений у футболі (він просить дозвіл на будівництво стадіону). Також слід відзначити стиль одягу і співзвучність прізвищ.
+				</p>
+			</div>
+			<div>
+				<h2 id="notes">
+					Примітки
+				</h2>
+				<ol>
+					<li> <a target="_blank" href="https://www.boxofficemojo.com/release/rl1181517313/">RocknRolla (2008)</a> Box Office Mojo. Архів оригіналу за 7 липня 2013. Процитовано 29 серпня 2009.</li>
+					<li><a target="_blank" href="http://www.imdb.com/title/tt1032755/trivia"> IMDb: Trivia for RocknRolla</a></li>
+				</ol>
+			</div>
+		</main>
+		<footer>
+			<h2 id="link">
+				Посилання
+			</h2>
+			<ul>
+				<li> <a target="_blank" href="https://www.warnerbros.com/?page=movies&pid=f-c35280a3/ROCKnROLLA">Офіційний сайт</a> </li>
+				<li><a target="_blank" href="https://kino-teatr.ua/uk/film/rocknrolla-4765.phtml">Рок-н-рольник</a></li>
+				<li><a target="_blank" href="https://www.imdb.com/title/tt1032755/">Рок-н-рольник</a></li>
+				<li><a target="_blank" href="https://www.allmovie.com/movie/v398571">Рок-н-рольник</a></li>
+			</ul>
+		</footer>
+	
 	</body>
 </html>
